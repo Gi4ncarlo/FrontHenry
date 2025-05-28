@@ -1,21 +1,25 @@
 import React from 'react';
 import Card from '../Card/Card';
+import { image } from '@heroui/theme';
 
 const Cards = [
   {
     id: 1,
-    title: "Card 1",
-    description: "This is the first card.",
+    title: "Saudage Dior",
+    price: 99.99,
+    image: "https://dior.vtexassets.com/arquivos/ids/1723982/C099600455_100ml_03.jpg?v=638774908683000000"
   },
   {
     id: 2,
-    title: "Card 2",
-    description: "This is the second card.",
+    title: "Chanel No. 5",
+    price: 123.45,
+    image: "https://i0.wp.com/farina.com.bo/wp-content/uploads/2022/01/bvlgari-single-terrae-essence.jpg?fit=595%2C400&ssl=1"
   },
   {
     id: 3,
-    title: "Card 3",
-    description: "This is the third card.",
+    title: "Acqua di Gio",
+    price: 89.99,
+    image: "https://olfactoryambition.com/wp-content/uploads/2023/03/armani-aqua-di-gio-profumo.webp",
   },
 ];
 
@@ -30,7 +34,8 @@ export default function CardList() {
                 <Card 
                     key={card.id} 
                     title={card.title} 
-                    description={card.description} 
+                    price={card.price}
+                    image={card.image}
                 />
             ))}
         </div>
