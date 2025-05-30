@@ -33,6 +33,7 @@ export default function CardList() {
             {Cards.map((card) => (
                 <Card 
                     key={card.id} 
+                    id={card.id}
                     title={card.title} 
                     price={card.price}
                     image={card.image}

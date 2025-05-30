@@ -9,7 +9,18 @@ export const siteConfig = {
       href: "/",
     },
 
+    {
+      label: "Dashboard",
+      href: "/DashboardUser/1",
+    },
+
+    {
+      label: "Carrito",
+      href: "/Cart",
+    },
+
   ],
+
   navMenuItems: [
     {
       label: "Profile",
